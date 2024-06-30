@@ -80,8 +80,25 @@ Option to try again or exit:
             throw silly error for messing with time
     else roll credits
 
+# Tools needed
+
+- Random.Range
+- Word Array
+- Alphabet Array
+- Packages (Fruits)(Letters)(Numbers)
 
 
+
+
+# Start Coding 
+
+- Create Character counter to check how many letters in each word
+    - return to number count output (word has 7 letters to guess)
+    - check for duplicate letters
+        - return appropriate output (word has two of this letter)
+
+- Create Word Dictionary
+    - Fruit name, length of word
 
 
 
