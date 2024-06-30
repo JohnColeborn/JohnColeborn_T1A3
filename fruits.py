@@ -3,7 +3,7 @@ from file_ops import load_fruit
 
 FILE_PATH = './data/fruits.json'
 
-def fruit_picker():
+def picker_random():
     fruits = load_fruit(FILE_PATH)    
 # Random Fruit Picker
     picker = random.choice(fruits)
@@ -11,4 +11,4 @@ def fruit_picker():
     
 
 
-fruit_picker()
+picker_random()
