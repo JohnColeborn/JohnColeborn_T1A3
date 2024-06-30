@@ -103,8 +103,12 @@ Option to try again or exit:
 
 - Create number of guess tracker
     - total number of guesses
-    - input recieved = guess number
-    - input remaining = 
+    - input received = guess number
+    - input remaining printed
+
+- Create JSON for fruits
+
+- Link Database, Operation modules, execute in Main
 
 
 

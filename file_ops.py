@@ -17,13 +17,3 @@ def load_fruit(file_path):
     except Exception as e:
         print(f"all the other errors unexpected {e}")
         return[]
-
-def save_fruit(file_path, fruits):
-    try:
-        with open(file_path, 'w') as file:
-            json.dump(fruits, file, indent = 4)
-        print(f"Fruits saved to {file_path}")
-    except PermissionError:
-        print(f"Permission Denied")
-    except Exception as e:
-        print(f"what you did that's crazy error {e}")
