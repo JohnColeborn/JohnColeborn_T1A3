@@ -6,9 +6,5 @@ FILE_PATH = './data/fruits.json'
 def picker_random():
     fruits = load_fruit(FILE_PATH)    
 # Random Fruit Picker
-    picker = random.choice(fruits)
-    print(picker)
-    
-
-
-picker_random()
+    picker = random.choice(fruits) 
+    return picker
