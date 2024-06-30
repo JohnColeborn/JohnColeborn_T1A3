@@ -1,7 +1,7 @@
 from file_ops import load_fruit
 from fruits import picker_random as pick
 from logicscripts.letter_numbers import count_char as letNum, count_unique_char as duplicateNum
-from logicscripts.guesser import guess_Num, guess_Word as guessWord
+from logicscripts.guesser import guess_Word as guessWord
 FILE_PATH = './data/fruits.json'
 
 
@@ -25,23 +25,24 @@ def main():
             # INSERT GAME CODE HERE          
             word = pick()            
             length = letNum(word)        
-            lives = guess_Num            
+            life = 5           
             guessed_word = ['-'] * len(word)
             make_a_guess = guessWord
-            print(f"\n The number of letters in your word are {length}")
-            print("Please select a letter (a-z)")
 
-            firstGuess = input().lower()
+            print(f"\n The number of letters in your word are {length}")
+            print("\n Please select a letter (a-z)")
+
+            firstGuess = input('\n').lower()
             # if first guess is a correct letter (p in the word apple), print correct guess 4 guess remaining - P P - - 
             if firstGuess in word:
                 make_a_guess(guessed_word, word, firstGuess)
-                lives -= 1
-                print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {lives} guesses remaining")
-            elif firstGuess not in word:                         
-                print(f"\nIncorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {lives} guesses remaining")
-                return lives
-            last_guess = lives 
-            
+                life -= 1                
+                print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+            elif firstGuess not in word:
+                life -= 1                                            
+                print(f"\nIncorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                return life
+
 
             print(f"the word is {word}") # Visual confirmation of word working lol, PLX DELETE
             # END GAME CODE HERE              
