@@ -5,5 +5,5 @@ fruitList = ["Apple", "Banana", "Cacao", "Durian", "Elderberry", "Fig", "Grapefr
 
 
 # Random Fruit Picker
-random_fruit = random.randrange(0, len(fruitList))
+fruit_picker = random.randrange(0, len(fruitList))
 
