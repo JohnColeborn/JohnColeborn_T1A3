@@ -97,10 +97,14 @@ Option to try again or exit:
     - check for duplicate letters
         - return appropriate output (word has two of this letter)
 
-- Create Word Dictionary
+- Create Fruit Word List and Random word picker
+    - import random
     - Fruit name, length of word
 
-
+- Create number of guess tracker
+    - total number of guesses
+    - input recieved = guess number
+    - input remaining = 
 
 
 

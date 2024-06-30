@@ -1,8 +1,8 @@
 # Initialise number of guesses
-guess = 0
+guess = 5
 
-while guess <= 0:
+while guess >= 5:
     print("You have five guesses remaining")
-    firstGuess = input()
-    guess += 1
-print(firstGuess)
+    guessNum = input()
+    guess -= 1
+print(f"You chose: {guessNum}, You have {guess} attempts remaining")
