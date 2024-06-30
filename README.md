@@ -84,8 +84,7 @@ Option to try again or exit:
 
 - Random.Range
 - Word Array
-- Alphabet Array
-- Packages (Fruits)(Letters)(Numbers)
+- Modules (Fruits)(Letters)(Numbers)
 
 
 
@@ -109,6 +108,8 @@ Option to try again or exit:
 - Create JSON for fruits
 
 - Link Database, Operation modules, execute in Main
+
+
 
 
 

@@ -3,5 +3,6 @@ def guess_Num():
     guess = 5
 
     while guess >= 5:    
-        guessNum = input()
+        numberGuessed = input()
         guess -= 1
+        return numberGuessed

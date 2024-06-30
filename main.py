@@ -1,7 +1,7 @@
 from file_ops import load_fruit
 from fruits import picker_random as pick
-from packages.letter_numbers import count_char as letNum, count_unique_char as duplicateNum
-from packages.guess_number import guess_Num as livesLeft
+from logicscripts.letter_numbers import count_char as letNum, count_unique_char as duplicateNum
+from logicscripts.guess_number import guess_Num as livesLeft
 FILE_PATH = './data/fruits.json'
 
 
@@ -25,7 +25,21 @@ def main():
             # INSERT GAME CODE HERE          
             word = pick()            
             length = letNum(word)
-            print(f"The number of letters in your word are {length}")
+            lives = livesLeft
+            guessed_word = ['-'] * len(word)
+            print(f"\n The number of letters in your word are {length}")
+            print("Please select a letter (a-z)")
+
+            firstGuess = input().lower()
+            
+            # if first guess is a correct letter (p in the word apple), print correct guess 4 guess remaining - P P - - 
+            if firstGuess in word:
+                print(f"\n Correct Guess! Your word so far is {guessed_word} , and you have {lives} guesses remaining")
+            elif firstGuess not in word:
+                print(f"Incorrect guess! Your word so far is {guessed_word} , and you have {lives} guesses remaining")
+            else:
+                return
+
             print(f"the word is {word}") # Visual confirmation of word working lol, PLX DELETE
             # END GAME CODE HERE              
         elif choice == '2':
