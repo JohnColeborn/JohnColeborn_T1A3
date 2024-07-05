@@ -24,20 +24,20 @@ def main():
 
         if choice == '1':
             # CODE THE GAME!
-            word = pick().lower()            
-            length = letNum(word)        
-            life = 5           
-            guessed_word = ['-'] * len(word)
-            make_a_guess = guessWord
+            word = pick().lower() # imports picker random from fruits.py and converts to lower
+            length = letNum(word) # imports count_char from letters_numbers.py    
+            life = 5 # initialises lives
+            guessed_word = ['-'] * len(word) # calculates length of picked word and adds '-' character to the guess output
+            make_a_guess = guessWord # imports guessword function from guesser.py
 
             print(f"\n The number of letters in your word are {length}")
             print("\n Please select a letter (a-z) or guess the word")
             
-            while life >= 0:
-                firstGuess = input("\n Enter your guess: ").lower()  # Prompt for new input
+            while life >= 0: # set lives based on life to countdown
+                firstGuess = input("\n Enter your guess: ").lower()  # Prompt for new input, convert to lower string
                 
-                if firstGuess in word and pick():
-                    make_a_guess(guessed_word, word, firstGuess)
+                if firstGuess in word and guessWord(guessed_word, word, guess = ()): # creates firstGuess, checks if in word^, checks if guessWord function is called and uses it
+                    make_a_guess (guessed_word, word, firstGuess)
                     print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                     print(word)
                 elif firstGuess in word != word:
