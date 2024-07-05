@@ -28,40 +28,50 @@ def main():
             length = letNum(word) # imports count_char from letters_numbers.py    
             life = 5 # initialises lives
             guessed_word = ['-'] * len(word) # calculates length of picked word and adds '-' character to the guess output
-            make_a_guess = guessWord # imports guessword function from guesser.py
+            make_a_guess = guessWord # imports guessword function from guesser.py !!!!!!!!!!!!!!!!!!!!!!
 
             print(f"\n The number of letters in your word are {length}")
             print("\n Please select a letter (a-z) or guess the word")
             
             while life >= 0: # set lives based on life to countdown
-                firstGuess = input("\n Enter your guess: ").lower()  # Prompt for new input, convert to lower string
+                first_Guess = input("\n Enter your guess: ").lower()  # Prompt for new input, convert to lower string
                 
-                if firstGuess in word and guessWord(guessed_word, word, guess = ()): # creates firstGuess, checks if in word^, checks if guessWord function is called and uses it
-                    make_a_guess (guessed_word, word, firstGuess)
+                if first_Guess in word and guessWord(guessed_word, word, guess = ()): # creates firstGuess, checks if in word^, checks if guessWord function is called and uses it
+                    guessWord (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
                     print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                    print(word)
-                elif firstGuess in word != word:
-                    make_a_guess(guessed_word, word, firstGuess)
+                elif len(first_Guess) > 1 != word: # checks to see if input is a char(acceptable), or word (BREAK)
+                        print(f"You entered more than one letter! And you guessed WRONG. The word was: {word}")
+                        if len(first_Guess) > 1 == word: # if user guesses word early, Mad kudos
+                            print(f"Wow, didn't expect you to guess {word} so easily! You brainac you!")
+                            break                
+                elif first_Guess == word:
+                    make_a_guess(guessed_word, word, first_Guess)
                     print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                    print(word)
+                    break
                 # break the loop if they guess a word... only one guess ok!
                 elif ''.join(guessed_word) == word:
                     print(f"Congratulations! You've guessed the word: {word}")
                     break
-                elif ''.join(guessed_word) != word and '':
-                    print(f"What have you DONE! You've not guessed the word: {word}")
-                    break
+                elif len(first_Guess) == 1 and first_Guess in word:
+                    make_a_guess(guessed_word, word, first_Guess)
+                    if ''.join(guessed_word) == word:
+                        print(f"Congratulations! You've guessed the word: {word}")
+                        break
+                    else:
+                        print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                 else:
+                    life -= 1
                     print(f"\nIncorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                 
-                life -= 1
+                if life == 0:
+                    print(f"You've run out of guesses! The word was: {word}")
 
-                # END GAME CODE             
         elif choice == '2':
-            exit()
+            print("Goodbye!")
+            break
         else:
-            print("\n Please select an appopriate choice (1 or 2)")
-            return main()         
+            print("\nPlease select an appropriate choice (1 or 2).")
+ 
    
 if __name__ == "__main__":
     main()
