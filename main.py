@@ -23,7 +23,7 @@ def main():
         choice = input("\nPlease select an appopriate choice (1 or 2)")
 
         if choice == '1':
-            # INSERT GAME CODE HERE          
+            # CODE THE GAME!
             word = pick().lower()            
             length = letNum(word)        
             life = 5           
@@ -34,11 +34,16 @@ def main():
             print("\n Please select a letter (a-z) or guess the word")
             
             while life >= 0:
-                firstGuess = input("\n Enter your guess: ").lower()  # Prompt the user for a new guess
+                firstGuess = input("\n Enter your guess: ").lower()  # Prompt for new input
                 
-                if firstGuess in word:
+                if firstGuess in word and pick():
                     make_a_guess(guessed_word, word, firstGuess)
                     print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                    print(word)
+                elif firstGuess in word != word:
+                    make_a_guess(guessed_word, word, firstGuess)
+                    print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                    print(word)
                 # break the loop if they guess a word... only one guess ok!
                 elif ''.join(guessed_word) == word:
                     print(f"Congratulations! You've guessed the word: {word}")
@@ -51,12 +56,12 @@ def main():
                 
                 life -= 1
 
-                # END GAME CODE HERE              
+                # END GAME CODE             
         elif choice == '2':
             exit()
         else:
             print("\n Please select an appopriate choice (1 or 2)")
-            return True         
+            return main()         
    
 if __name__ == "__main__":
     main()
