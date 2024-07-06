@@ -33,7 +33,6 @@ def main():
             print("\n Please select a letter (a-z) or guess the word")
             
             while life >= 1: # set lives based on life to countdown
-                print(word)
                 first_Guess = input("\n Enter your guess: ").lower()  # Prompt for new input, convert to lower string                
                 if len(first_Guess) > 1 and first_Guess == word: # if user guesses word early, Mad kudos
                     make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
