@@ -43,11 +43,13 @@ def main():
                     print(f"You entered more than one letter! And you guessed WRONG. The word was: {word}")
                     break
                 elif first_Guess in word and len(first_Guess) == 1: # Correct Character Guess!!!
-                    life -= 1 # removes a life for guess
-                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments                    
-                    print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                    if first_Guess and make_a_guess == word: # IF word is guessed by char completion (short words only), end game in SUCCESS 
+                    if guessed_word == word: # IF word is guessed by char completion (short words only), end game in SUCCESS 
                         print(f"Wow, didn't expect you to guess {word} so easily! You brainiac you!")
+                    else:                        
+                        life -= 1 # removes a life for guess
+                        make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments                    
+                        print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                        
 
                 else:
                     life -= 1 # removes a life for guess
