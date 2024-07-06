@@ -35,30 +35,32 @@ def main():
             while life >= 1: # set lives based on life to countdown
                 print(word)
                 first_Guess = input("\n Enter your guess: ").lower()  # Prompt for new input, convert to lower string                
-                if first_Guess in word and guessWord(guessed_word, word, guess = ()): # creates firstGuess, checks if in word^, checks if guessWord function is called and uses it
-                    guessWord (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
-                    print(f"\nCorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                    if len(first_Guess) > 1 == word: # if user guesses word early, Mad kudos
-                            guessWord (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
-                            print(f"Wow, didn't expect you to guess {word} so easily! You brainac you!")
-                            break
-                    elif len(first_Guess) > 1 != word: # checks to see if input is a char(acceptable), or word (BREAK)
-                        guessWord (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
-                        print(f"You entered more than one letter! And you guessed WRONG. The word was: {word}")                                        
+                if len(first_Guess) > 1 and first_Guess == word: # if user guesses word early, Mad kudos
+                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
+                    print(f"Wow, didn't expect you to guess {word} so easily! You brainiac you!")
+                    break
+                elif len(first_Guess) > 1 and first_Guess != word: # checks to see if input is a char(acceptable), or word (BREAK)
+                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
+                    print(f"You entered more than one letter! And you guessed WRONG. The word was: {word}")
+                    break
+                #FIX THIS CODE!
+                elif first_Guess in word and len(first_Guess) == 1:
+                    print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                #FIX THIS CODE!
                 else:
                     life -= 1 # removes a life for incorrect char guess
-                    print(f"\nIncorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                
-                if life == 0: # 
-                    print(f"You've run out of guesses! The word was: {word}")
-                    return
-
+                    print(f"\n Incorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
+                    
+                    if life == 0: # Ends game when lives run out
+                        print(f"You've run out of guesses! The word was: {word}")
+                        return main ()
+        # END GAME CODE!
         elif choice == '2':
             print("Goodbye!")
             break
         else:
             print("\nPlease select an appropriate choice (1 or 2).")
- 
+    
    
 if __name__ == "__main__":
     main()
