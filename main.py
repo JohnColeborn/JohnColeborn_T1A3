@@ -46,20 +46,22 @@ def main():
                     life -= 1 # removes a life for guess
                     make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments                    
                     print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                    # Print word once life == 0
-                    if life == 0 and word == True:
-                        print(f"RIP, the word was: {word}")
-                    elif life == 0 and word == False:
-                        print(f"RIP, the word was: {word}")
-                    if first_Guess and make_a_guess == word: # IF word is guessed by char completion (short words only), end game in SUCCESS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    if first_Guess and make_a_guess == word: # IF word is guessed by char completion (short words only), end game in SUCCESS 
                         print(f"Wow, didn't expect you to guess {word} so easily! You brainiac you!")
+
                 else:
                     life -= 1 # removes a life for guess
                     print(f"\n Incorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                     
-                    if life == 0: # Ends game when lives run out
-                        print(f"You've run out of guesses! The word was: {word}")
-                        return main ()
+#  # Ends game when lives run out                               IF CHAR IS CORRECT FIX HERE OR NOT FIX HERE
+#                                             # Print word once life == 0
+#                     if life == 0 and word == make_a_guess:
+#                         print(f"Cracking Good Job for deducing: {word}")                              FIX THIS!!!!!!!!!!!!!
+#                     elif life == 0 and word != make_a_guess:
+#                         print(f"RIP, the word was: {word}")
+#                     else:
+#                         print(f"You've run out of guesses! The word was: {word}")
+#                         return main ()                    # if life == 0:
         # END GAME CODE!
         elif choice == '2':
             print("Goodbye!")
