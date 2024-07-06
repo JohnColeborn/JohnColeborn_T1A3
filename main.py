@@ -42,13 +42,19 @@ def main():
                     make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
                     print(f"You entered more than one letter! And you guessed WRONG. The word was: {word}")
                     break
-                #FIX THIS CODE!
-                elif first_Guess in word and len(first_Guess) == 1:
-                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
+                elif first_Guess in word and len(first_Guess) == 1: # Correct Character Guess!!!
+                    life -= 1 # removes a life for guess
+                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments                    
                     print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
-                #FIX THIS CODE!
+                    # Print word once life == 0
+                    if life == 0 and word == True:
+                        print(f"RIP, the word was: {word}")
+                    elif life == 0 and word == False:
+                        print(f"RIP, the word was: {word}")
+                    if first_Guess and make_a_guess == word: # IF word is guessed by char completion (short words only), end game in SUCCESS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        print(f"Wow, didn't expect you to guess {word} so easily! You brainiac you!")
                 else:
-                    life -= 1 # removes a life for incorrect char guess
+                    life -= 1 # removes a life for guess
                     print(f"\n Incorrect Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                     
                     if life == 0: # Ends game when lives run out

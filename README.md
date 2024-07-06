@@ -1,8 +1,6 @@
 # Hangman
 
-A basic premise of word guessing, pick a letter, seven chances to guess the word based around 7 individual letter choices.
-
-Create a premise.
+A basic premise of word guessing, pick a letter, 5 chances to guess the word based around individual letter choices.
 
 # Premise
 
