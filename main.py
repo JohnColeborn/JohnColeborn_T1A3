@@ -45,6 +45,7 @@ def main():
                     break
                 #FIX THIS CODE!
                 elif first_Guess in word and len(first_Guess) == 1:
+                    make_a_guess (guessed_word, word, first_Guess) # takes guesser.py logic and adds other initilisations as specific arguments
                     print(f"\n Correct Guess! Your word so far is {''.join(guessed_word)}, and you have {life} guesses remaining")
                 #FIX THIS CODE!
                 else:
