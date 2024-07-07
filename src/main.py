@@ -14,7 +14,7 @@ def main():
 
     while True:
         # Welcome Message
-        print("\nHi and welcome to Hangman! \nYou will select a letter and ultimately strive to guess the word. \nYou will have 5 chances to guess letters, \nOnly one chance to guess the word. Good Luck!")
+        print("\nHi and welcome to Hangman! You will select a letter and ultimately strive to guess the word. You will have 5 chances to guess letters, and only one chance to guess the word. Good Luck!")
         # User UI
         print("\n1. New Game")
         print("\n2. Exit")

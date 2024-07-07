@@ -1,0 +1,31 @@
+0000000000000000000000000000000000000000 af65d224af4ae1d6da9083b64233907b024dd4f8 JohnColeborn <jwcoleborn@gmail.com> 1719418440 +0800	commit (initial): yessir
+af65d224af4ae1d6da9083b64233907b024dd4f8 0000000000000000000000000000000000000000 JohnColeborn <jwcoleborn@gmail.com> 1719418451 +0800	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 af65d224af4ae1d6da9083b64233907b024dd4f8 JohnColeborn <jwcoleborn@gmail.com> 1719418451 +0800	Branch: renamed refs/heads/master to refs/heads/main
+af65d224af4ae1d6da9083b64233907b024dd4f8 6b5a217a9a047a267b5a573a4500f2e312299933 JohnColeborn <jwcoleborn@gmail.com> 1719592052 +0800	commit: 2nd commit
+6b5a217a9a047a267b5a573a4500f2e312299933 cd84db3f5ac480223e06390cbb3f1e5473e1272d JohnColeborn <jwcoleborn@gmail.com> 1719727203 +0800	commit: Started psuedocode
+cd84db3f5ac480223e06390cbb3f1e5473e1272d 1ea864f4c34dc5e54b787c9e647c0428cd8cb9fa JohnColeborn <jwcoleborn@gmail.com> 1719728727 +0800	commit: Roughed out game premise and psuedocode
+1ea864f4c34dc5e54b787c9e647c0428cd8cb9fa e1963885ad49f90503b94f8e195034a423f7a828 JohnColeborn <jwcoleborn@gmail.com> 1719731149 +0800	commit: created word counter and fruit list
+e1963885ad49f90503b94f8e195034a423f7a828 8e1e851d116cf922c93fd21064ca3e0e592dfb5f JohnColeborn <jwcoleborn@gmail.com> 1719731181 +0800	commit: created word counter and fruit list
+8e1e851d116cf922c93fd21064ca3e0e592dfb5f eeba1f973a3f31487adf8d90327bec4b034c9b83 JohnColeborn <jwcoleborn@gmail.com> 1719735138 +0800	commit: completed word letter counter tool, struggling with guess number interator and tracker
+eeba1f973a3f31487adf8d90327bec4b034c9b83 65626d57850f0997fc987025e9900d872d55423c JohnColeborn <jwcoleborn@gmail.com> 1719735538 +0800	commit: cleaned up number guess logic
+65626d57850f0997fc987025e9900d872d55423c f25947077b4e4f95c9ed8d11eb7b76c199b07b9a JohnColeborn <jwcoleborn@gmail.com> 1719740405 +0800	commit: started working on UI setup
+f25947077b4e4f95c9ed8d11eb7b76c199b07b9a fb3f0e77af5edf4a57ad4db281fb871e0ac8e65f JohnColeborn <jwcoleborn@gmail.com> 1719745173 +0800	commit: cleaned up json, converted fruit package to standalone script, cleaned up random word picker logic
+fb3f0e77af5edf4a57ad4db281fb871e0ac8e65f b82046d9ed4f9029620dc59c6a8d69b3b010ede9 JohnColeborn <jwcoleborn@gmail.com> 1719746431 +0800	commit: bug found, printing fruit from main.py not sure why
+b82046d9ed4f9029620dc59c6a8d69b3b010ede9 d8320718abdef9171a1313ba572832d5392ed752 JohnColeborn <jwcoleborn@gmail.com> 1719748397 +0800	commit: cleaned up bugs, working as intended! will now choose random word and tell you how many letters there are in it
+d8320718abdef9171a1313ba572832d5392ed752 51b40bd211d7cc3cd0f7733784392c857dfc7e29 JohnColeborn <jwcoleborn@gmail.com> 1719750982 +0800	commit: trying to clean up feedback post guess, logictester added
+51b40bd211d7cc3cd0f7733784392c857dfc7e29 24a7505416e5938a24530ad1dedd9b32a188d1e5 JohnColeborn <jwcoleborn@gmail.com> 1719753935 +0800	commit: almost got it, sitll getting bug of incorrect function re number of guesses remaining
+24a7505416e5938a24530ad1dedd9b32a188d1e5 f0b6caa6ca93cad50041afb44d7887a0f31cd5ad JohnColeborn <jwcoleborn@gmail.com> 1719755815 +0800	commit: bug fixed, /ignoring that function (commented). Code working well, need to implement iteration now
+f0b6caa6ca93cad50041afb44d7887a0f31cd5ad 460b53876a964bdfce8a6b749560331dfab49c9f JohnColeborn <jwcoleborn@gmail.com> 1719757945 +0800	commit: iteration created - needs polishing - very buggy
+460b53876a964bdfce8a6b749560331dfab49c9f c08488eef87e540a81f066b7c73bcc27c13e3987 JohnColeborn <jwcoleborn@gmail.com> 1720194102 +0800	commit: fixed about 10 bugs, only 100 to go :)
+c08488eef87e540a81f066b7c73bcc27c13e3987 8c60930642eef26812552bf9152fa188cfc756d2 JohnColeborn <jwcoleborn@gmail.com> 1720196027 +0800	commit: just need to make entering a word break the game
+8c60930642eef26812552bf9152fa188cfc756d2 c64ae7dbd38dbbde623cc1c678d66731bfd8c021 JohnColeborn <jwcoleborn@gmail.com> 1720198704 +0800	commit: 2 bugs to go, getting incorrect guesses from correct guesses(bloody bools), and one extra guess but not(code working but too much)
+c64ae7dbd38dbbde623cc1c678d66731bfd8c021 49e90955b1e6f41a9d4b12215f00bc95d907b342 JohnColeborn <jwcoleborn@gmail.com> 1720201869 +0800	commit: think I know whats going on, but so tired.. try again tomorrow
+49e90955b1e6f41a9d4b12215f00bc95d907b342 f7a7f452d7808e0741e39a229bd698d5372d7f68 JohnColeborn <jwcoleborn@gmail.com> 1720280258 +0800	commit: almost there, just need to fix final block: guess correct character
+f7a7f452d7808e0741e39a229bd698d5372d7f68 3f2b5254b3a39b75a1f39de4996919a9073aef9f JohnColeborn <jwcoleborn@gmail.com> 1720280387 +0800	commit: fixed and flawless
+3f2b5254b3a39b75a1f39de4996919a9073aef9f 9985dd75b25e07cdb5a3c17b39d3e0455084eef4 JohnColeborn <jwcoleborn@gmail.com> 1720280691 +0800	commit: nevermind, two more bugs, guess doesnt drop when correct char indentified and getting correct word via correct char guess doesnt terminate game
+9985dd75b25e07cdb5a3c17b39d3e0455084eef4 65d65a71d64135d0d2fd4a355c85ec977f724ec5 JohnColeborn <jwcoleborn@gmail.com> 1720282724 +0800	commit: make that 24 bugs
+65d65a71d64135d0d2fd4a355c85ec977f724ec5 ea85cdcdd776b406fd9b1728e8c44c512193b22d JohnColeborn <jwcoleborn@gmail.com> 1720283946 +0800	commit: Almost there, four known bugs
+ea85cdcdd776b406fd9b1728e8c44c512193b22d 9ac865b90faefa6461474c140e870dae2d2b290e JohnColeborn <jwcoleborn@gmail.com> 1720284383 +0800	commit: work in progress, I need to sleep
+9ac865b90faefa6461474c140e870dae2d2b290e 602cd7fe124671d3b1860d001cdcc65f437ba3e2 JohnColeborn <jwcoleborn@gmail.com> 1720330124 +0800	commit: isolated code block producing bug - revising next
+602cd7fe124671d3b1860d001cdcc65f437ba3e2 87b227d17747f8023b4e616f9a111704f9704907 JohnColeborn <jwcoleborn@gmail.com> 1720331494 +0800	commit: Revised, Stress Tested, Optimised, Polished Alpha Launch!
+87b227d17747f8023b4e616f9a111704f9704907 25b32f559e40012b9b9af2ad246d4f1152410f4d JohnColeborn <jwcoleborn@gmail.com> 1720340674 +0800	commit: Final Alpha Build - Known Bug - Using enter key prints as correct guess
