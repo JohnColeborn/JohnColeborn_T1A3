@@ -3,7 +3,7 @@
 A basic premise of word guessing, pick a letter, 5 chances to guess the word based around individual letter choices.
 
 # GITHUB REPO
-https://github.com/JohnColeborn/termapp
+https://github.com/JohnColeborn/JohnColeborn_T1A3
 
 # Install and Play requirements
 Python3
