@@ -2,6 +2,12 @@
 
 A basic premise of word guessing, pick a letter, 5 chances to guess the word based around individual letter choices.
 
+# GITHUB REPO
+https://github.com/JohnColeborn/termapp
+
+# Install and Play requirements
+Run the "run shell script" in src using WSL or equivalent
+
 # Premise
 
 The words are limited to (Apple, Banana, Cacao, Durian, Elderberry, Fig, Grapefruit, Hazelnut, Icaco, Jackfruit, Kiwi, Lime, Mandarin, Nectarine)
