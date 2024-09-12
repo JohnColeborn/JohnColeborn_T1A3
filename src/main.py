@@ -3,7 +3,7 @@ from fruits import picker_random as pick
 from logicscripts.letter_numbers import count_char as letNum
 # from logicscripts.guesser import guess_Word as guessWord OBSOLETE LOGIC 
 
-FILE_PATH = '../data/fruits.json'
+FILE_PATH = './data/fruits.json'
 
 def main():
     fruits = load_fruit(FILE_PATH)  # load the json db
